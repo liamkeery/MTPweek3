@@ -1,0 +1,13 @@
+//---Global rules and variables---//
+
+$body: 'Open Sans', sans-serif;
+$title: 'Sanchez', serif;
+
+body {
+  font-family: $body;
+}
+
+h1, h2 h3, h4, h5, h6 {
+  font-family: $title;
+
+}
