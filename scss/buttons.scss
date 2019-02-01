@@ -1,33 +1,19 @@
-body {
-  font-family: "Open Sans", sans-serif;
-}
-
-h1, h2 h3, h4, h5, h6 {
-  font-family: "Sanchez", serif;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-nav ul a {
-  background-color: #ccc;
-}
-
-.button {
+@mixin buttonTemplate ($bradius) {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
   -webkit-appearance: none;
-  border-radius: 10px;
+  border-radius: $bradius;
   transition: background-color 0.25 ease-out, color 0.25 ease-out;
   font-size: 0.9rem;
   line-height: 1;
   text-align: center;
   color: #fefefe;
+}
+
+.button {
+  @include buttonTemplate(10px);
   padding: 1.5rem 2.75rem;
   border: 1px solid transparent;
   background-color: red;
 }
-
-/*# sourceMappingURL=main.css.map */
